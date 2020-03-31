@@ -1,0 +1,181 @@
+// Câu di?u ki?n r? nhánh ( if - else)
+
+// if(condition){
+//     do something
+// }else {
+//     do something else
+// }
+
+// Boolean (true/false)
+
+// const randomBoolean = true;
+
+// ==,>,<,>=,<=,!=
+// ===,!==( ki?u so sánh c? v? giá tr? và d? li?u)
+// const x = 5 ;
+// console.log(x>10);
+// console.log(x ==="5");
+
+
+// //  && (AND) , || (OR), ! (OPPOSITE)
+
+// const x =5;
+// const y = 9 ;
+
+// (y>9) || (x===5)
+// || ch? c?n 1 trong 2 là true => k?t qu? là true
+
+// x<10 && x===5
+// &&  - c?n c? 2 ph?i true ==> k?t qu? là true
+
+// !(x===y)  // true
+
+// const x = 3;
+// const y = 8;
+
+// y === "b" || x >= 10;
+
+// !(x=="3") || x === y) && !(y !=8 && x <= y) fasle
+
+
+// if (){
+// //do something
+// }else if (){
+// //do something
+// }else {
+//     //do something
+// }
+
+// Cho ngu?i  dùng nh?p vào tu?i 
+// tu?i < 18 : you cannot enter the bar 
+// tu?i  18 -21 : you can enter but cannot drink
+// các tru?ng h?p còn l?i == you can drink
+
+
+// const a = prompt ( " Vui lòng nh?p vào s? tu?i")
+// if( a < 18 ){
+//     console.log('you cannot enter the bar')
+// }else if (a<21){ 
+//     console.log('you can enter but cannot drink')
+// }else {
+//     console.log( "you can drink ")
+// }
+
+
+//     const age = Number(prompt ( " Hãy nh?p vào s? tu?i"))
+//     if( age < 0 ){ 
+//         console.log('invalid age')
+//     }else if( age === 21 ){ 
+//         console.log(" happy birthday")
+//     }else if ( age %2 ===1 ){
+//         console.log("your age is odd")
+//     }else if (age % Math.sqrt(age)===0){
+//         console.log("perfect square")
+//     }else{console.log("aaaa")}
+
+
+// While loops
+
+// while(condition){
+//     hành d?ng l?p
+// }
+
+// let i = 1;
+// while ( i < 5 ){
+//     console.log(i);
+//     i = i + 1;
+// }
+
+// while+ if else
+// Cho ngu?i dùng nh?p vào 1 s? b?t kì t? 1 d?n 10
+// s? k?t qu? là 1 s? random t? 1 -10
+// n?u input < result : too high
+// n?u input > result : too low
+// n?u input === result :correct va k?t thúc chuong trình
+
+
+// const resultNumber = Math.ceil(Math.random()*10);
+
+// let loop = true ;
+// while ( loop === true ){
+//     const userInput = Number(prompt(" Nh?p vào m?t s? b?t kì t? 1 d?n 10 "))
+  
+//     if ( userInput < resultNumber) {
+//         console.log("to low");
+//     }else if ( userInput > resultNumber){
+//         console.log("to high");
+//     }else {
+//         console.log("conrrect");
+//          loop = false;
+//         //break;
+//     }
+// }
+
+// S? d?ng vòng l?p while 
+// 1 .in ra màn hình 1 -10
+
+// let i = 1;
+// while (i<=10){
+//     console.log(i);
+//     i =  i + 1;
+// }   
+
+
+// 2. in ra cá s? chia h?t cho 4 t?  0 -20
+
+// let a = 0 ;
+// while (a <=20){
+//     if (a % 4 === 0){
+//         console.log(a)
+//     }
+//     a++
+// }
+
+// // in ra các s? l? t? 30 - 40
+
+
+// let b = 30 ;
+// while (b <=40){
+//     if( b % 2 !== 0){
+//         console.log(b)
+//     }
+//     b += 1 
+// }
+
+
+// // in ra các s? v?a chia h?t cho 3 và chia h?t cho 5 t? 5- 30
+
+// let c = 5 ;
+// while (c <=50){
+//     if(c % 3 === 0 && c % 5 === 0){
+//         console.log(c)
+//     }
+//     c++
+// }
+
+
+//For loops
+// for(condition){
+//     //hành d?ng l?p
+// }
+
+// s? d?ng vòng l?p for in ra t? 1 -5 
+
+// for( let i = 1 ; i <= 5 ; i++ ){
+//     console.log(i)
+// }
+
+
+// S? d?ng vòng l?p for
+// // tính t?ng các s? t? 1 d?n 10
+// let result =0;
+// for (let i = 1; i<=10 ; i++){
+//      result = result + i
+//    console.log(result);
+// }
+
+// // in ra các s? t? 1 d?n 20 cách nhau 3 don v?
+
+// for(let i = 1 ; i <= 20 ; i+=3 ){
+//     console.log(i)
+// }

@@ -1,0 +1,77 @@
+// console.log("Hello Word")
+
+//Khai báo bi?n
+
+//var, let, const
+
+// let randomName = "Chinh";
+// randomName = "Trinh" ;
+// console.log(randomName);
+
+// const car = "Mecerdes"
+// // car = "BMW"
+// console.log(car) ;
+
+//var = let
+// ifelse{}
+
+// Nh?n d?u vào c?a ngu?i dùng
+// prompt
+
+// let userInput = prompt("What is your name?");
+// console.log(userInput);
+
+//Ex 1 :
+
+// let a = prompt("Please input a");
+
+// let b = prompt("Please input b");
+
+// let sum = Number(a) + Number(b);
+// console.log(sum);
+
+
+
+
+// Ki?u d? li?u
+//String, Number
+
+
+// let randomString = "Hello everyone";
+// let randomString2 = 'How are you?';
+// let randomString3 = `I'm fine thank you, and you?`;
+// console.log(randomString);
+// console.log(randomString2);
+// console.log(randomString3);
+
+// let totalString = randomString + " " + randomString2 + " " +randomString3
+// console.log(totalString);(
+
+// let result = `My grade is'nt good at all`;
+// console.log(result);
+// let result2 = " I'm so sad";
+// //let totalReslut = result + "." + result2;
+// let totalReslut = `${result}. ${result2}`;
+// console.log(totalReslut);
+
+//Number
+
+//let randomNumber = 10;
+//+-*/
+
+// let a = 10;
+// let b = 20;
+// let result = a + b
+// result = a - b ;
+// result = a/b ;
+// result = a * b ;
+// result = a % b ;
+// result = b % a ;
+// console.log(result);
+
+// let a = 50 ;
+// let b = 100 ;
+// let c = a + b ;
+// console.log(c);
+
+ s
