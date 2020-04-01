@@ -15,7 +15,7 @@ if (n<0){console.log("invalid input")
 let name  = prompt("Vui lòng nhập tên");
 let age  = Number(prompt("Vui lòng nhập tuổi"));
 if(age<18){console.log(name,"chưa đủ tuổi vào trang web này")
-}else if(age>=18){let question  = prompt(name + " " + "có muốn đăng nhập vào trang web này không")
+}else if(age>=18){let question  = prompt(name + " " + "có muốn đăng nhập vào trang web này không (yes/no)")
     if(question === 'yes'){console.log(name,'đã vào trang web thành công')
     } else if (question === 'no'){console.log(name, 'thoát khỏi trang web')
     } 
@@ -107,7 +107,7 @@ for (let i = chain.length-1 ; i>=0;i--){
 }
 console.log(newString)
 
-let next = prompt(" Bạn có muốn tiếp tục chương trình")
+let next = prompt(" Bạn có muốn tiếp tục chương trình (yes/no)")
 if (next === "yes") {
     let chain = prompt(" Vui lòng nhập vào  tên chuỗi ")
 let newString = ""
@@ -117,4 +117,4 @@ let newString = ""
     i--
     }
   console.log(newString)
-}else if ( next = "no"){console.log("dừng chương trình")}
+}else if ( next === "no"){console.log("dừng chương trình")}
