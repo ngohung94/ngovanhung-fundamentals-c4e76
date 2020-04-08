@@ -1,29 +1,26 @@
 // Bài 1 :
-let n = Number(prompt("Nhập vào số n  để tính tổng các số lẻ hoặc chẵn từ 1 đến n"));
-   
+let number = Number(prompt("Nhập vào số n  để tính tổng các số lẻ hoặc chẵn từ 1 đến n"));
 let sumEven = 0;
-let sumOdd =0 ;
-    for (let i =1 ; i<=n ; i++ ){
-   
+let sumOdd = 0 ;
+    for (let i = 1 ; i <= number ; i++ ){
 if (i%2===0){
         sumEven += i; 
  }else{
      sumOdd +=i;
 }
     }
-console.log( `tổng số chẵn  từ 1 đến ${n} là :` + sumEven);
-console.log( `tổng số lẻ từ 1 đến ${n} là :` + sumOdd);
-
+console.log( `tổng số chẵn  từ 1 đến ${number} là :` + sumEven);
+console.log( `tổng số lẻ từ 1 đến ${number} là :` + sumOdd);
 
 //  Bài 2  :
 
-let number = Number(prompt("Nhập vào số muốn kiểm tra có phải số nguyên tố hay không"));
-if (number<2){
+let number1 = Number(prompt("Nhập vào số muốn kiểm tra có phải số nguyên tố hay không"));
+if (number1 < 2){
     console.log(false)
 }else{
     let a = true ;
-    for(let i = 2 ; i < number ; i++){
-        if(number % i == 0){
+    for(let i = 2 ; i < number1 ; i++){
+        if(number1 % i == 0){
             a = false;
 }
 }
@@ -35,7 +32,7 @@ if (number<2){
 // Bài 3
 
 let userNumber = Number(prompt("Nhập vào số muốn in ra các số nguyên tố nhỏ hơn"));
-if (userNumber<2){
+if (userNumber < 2){
     console.log(`Không có số nguyên tố nào nhỏ hơn ${userNumber}`)
 }else{
     console.log(`Số nguyên tố nhỏ hơn ${userNumber} là :`)
@@ -55,11 +52,11 @@ if (userNumber<2){
 
 // Bài 4
 let  fib = Number(prompt('Nhập vào số n >= 0 để in ra phần tử thứ n của dãy Fibonacci'))
-if(fib<0){
+if(fib < 0){
       console.log("Không hợp lệ");     
     }else {
     let a =1,b=0,temp;
-    for(i = 0; i< fib; i++){
+    for(i = 0; i < fib; i++){
         temp = a;
         a = a + b; 
         b = temp; 
@@ -70,10 +67,10 @@ if(fib<0){
 
 //Bài 5;
 let loop = true;
-    while(loop ){
-        let  sumNumber = Number(prompt(' Nhập vào số muốn tính tổng các số trước đó'));
+    while(loop){
+        let sumNumber = Number(prompt(' Nhập vào số muốn tính tổng các số trước đó'));
       if (sumNumber>=0){
-     let   sum = (sumNumber-1)+(sumNumber-2) ;
+     let   sum = (sumNumber-1) + (sumNumber-2) ;
      console.log( `Tổng các số trước ${sumNumber} là :` + sum);
       }else{
         loop = false ;
@@ -82,11 +79,9 @@ let loop = true;
     }
 
  //  Bài 6
-let input=prompt("Nhập chuỗi bất kỳ ");
-let loop=true;
+let input = prompt("Nhập chuỗi bất kỳ ");
   for(let i=0;i<=input.length/2;i++)
   if(input[i] !== input[input.length-1-i]){
-    loop=false;
     console.log(false)
     break;
   }else {
@@ -125,7 +120,14 @@ let c2 = Number(prompt("Nhập số c2"));
 let x,y;
 console.log(`${a1}x + ${b1}y = ${c1}`);
 console.log(`${a2}x + ${b2}y = ${c2}`);
-y=(c2*a1-a2*c1)/(b2*a1-b1*a2);
-x=(c1-b1*y)/a1;
-console.log("x= "+x);
-console.log("y= "+y)
+d=a1*b2-a2*b1;
+dx=c1*b2-c2*b1;
+dy=a1*c2-a2*c1;
+if ( d !== 0){
+     x = dx/d;
+     y = dy/d;
+     console.log(` Hệ pt có nghiệm duy nhất x = ${x}, y = ${y}`)
+}else if ( dx !== 0) {
+    console.log("Hệ pt vô nghiệm");
+}else { console.log("Hệ pt có vô số nghiệm")
+}
