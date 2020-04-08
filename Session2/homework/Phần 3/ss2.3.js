@@ -35,20 +35,19 @@ let userNumber = Number(prompt("Nhập vào số muốn in ra các số nguyên 
 if (userNumber < 2){
     console.log(`Không có số nguyên tố nào nhỏ hơn ${userNumber}`)
 }else{
-    console.log(`Số nguyên tố nhỏ hơn ${userNumber} là :`)
-    let count = true;
-    for (let i = 2; i < userNumber; i++) {
-        for (let j = 2; j < i; j++) {
+    console.log(`Số nguyên tố nhỏ hơn hoặc bằng ${userNumber} là :`)
+    for (let i = 2; i <= userNumber; i++) {
+        let count = 0;
+        for (let j = 1 ; j <= i; j++) {
             if (i % j === 0) {
-                count =false;
+                count++;
             }
         }
-        if (count === true) {
+        if (count === 2) {
             console.log(i);
         }
-        count = true;
     }
-    }
+}
 
 // Bài 4
 let  fib = Number(prompt('Nhập vào số n >= 0 để in ra phần tử thứ n của dãy Fibonacci'))
