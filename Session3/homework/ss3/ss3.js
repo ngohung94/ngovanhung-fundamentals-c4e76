@@ -26,41 +26,38 @@ const a = [4, 5, 7, -8];
 console.log(...a);
 
 // Bài 4 : 
-let result;
-const todoList = ["Jean","T-Shirt","Socks"] ;
-result = todoList.map(function(value,index){
-    return `${value}`
-})
+ const todoList = ["Jean","T-Shirt","Socks"] ;
+
 let loop = true ;
 while(loop){
     let userInput = prompt(" Hi there , welcome to shop admin panel , what do you want : C , R , U , D ").toUpperCase() ;
     if ( userInput === 'E'){ 
         console.log("This command is not supported");
     }else if ( userInput === 'R'){
-            for ( i = 0 ; i <= result.length-1 ; i++){ 
-                console.log(`${i +1 }. ${result[i]}`);
+            for ( i = 0 ; i <= todoList.length-1 ; i++){ 
+                console.log(`${i +1 }. ${todoList[i]}`);
                    }
     }else if(userInput === 'C'){
             const newuserInput = prompt("Enter the name of the new item ");
-            result.push(newuserInput) ;
+            todoList.push(newuserInput) ;
             alert("Done");
-            for ( i = 0 ; i <= result.length-1 ; i++){ 
-                console.log(`${i +1 }. ${result[i]}`);
-            }
+            for ( i = 0 ; i <= todoList.length-1 ; i++){ 
+                console.log(`${i +1 }. ${todoList[i]}`);
+                   }
     }else if ( userInput == 'U'){
             const index = Number(prompt("Enter the position you want to update")) - 1 ;
             const newContent  = prompt(" Enter the new name");
-            result[index] = newContent ;
+            todoList[index] = newContent ;
             alert("Done");
-            for ( i = 0 ; i <= result.length-1 ; i++){ 
-                console.log(`${i +1 }. ${result[i]}`);
-            }
+            for ( i = 0 ; i <= todoList.length-1 ; i++){ 
+                console.log(`${i +1 }. ${todoList[i]}`);
+                   }
     }else if ( userInput === 'D'){  
             const index = Number(prompt("Enter the position you want to delete ")) - 1 ;
-            result.splice(index,1) ;
-            for ( i = 0 ; i <= result.length-1 ; i++){ 
-                console.log(`${i +1 }. ${result[i]}`) ;
-            }
+            todoList.splice(index,1) ;
+            for ( i = 0 ; i <= todoList.length-1 ; i++){ 
+                console.log(`${i +1 }. ${todoList[i]}`);
+                   }
     }else {
         break ;
     }
@@ -68,7 +65,7 @@ while(loop){
 // Bai 5
 const userInput = prompt(` Enter squence of numbers , separated by "," `)
 const user = userInput.split(",")
-for (let i = 0; i < arr.length; i++) {
+for (let i = 0; i < user.length; i++) {
     sum += Number(arr[i]);
   }
   alert(`The sum of them is ${sum}`);
