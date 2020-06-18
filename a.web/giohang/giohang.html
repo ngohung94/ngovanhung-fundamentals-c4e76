@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<show lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="giohang.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <a class="logo" href="../index.html" title="">
+          <img
+            class="imglogo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoGmBrN-6s53yBRlJXG4vMDtmfpQMgXPXnSff5LjKVtuQXV8VJ&usqp=CAU"
+            alt=""
+          />
+          <b class="icon-logo">HTH shop</b>
+        </a>
+      </div>
+      <div class="search">
+        <form method="GET">
+          <div>
+            <input
+              type="text"
+              name="search"
+              placeholder="Nhập tên sản phẩm cần tìm ..."
+            />
+            <button class="icon-search" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="gio">
+        <div>
+          <span> Hotline : 19001994</span>
+        </div>
+        <div>
+          <a href="./">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            Giỏ hàng
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <a class="icon1" href="../dienthoai/dienthoai.html">
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+        ĐIỆN THOẠI
+      </a>
+      <a class="icon1" href="../laptop/laptop.html">
+        <i class="fa fa-laptop" aria-hidden="true"></i>
+        LAPTOP
+      </a>
+    </div>
+    <ul class="mb-head">
+      <li>
+        <a href="../index.html">Trang chủ</a>
+      </li>
+
+      <li>
+        <a href="./giohang.html">Giỏ hàng</a>
+      </li>
+    </ul>
+    <div class="gh-top">
+      Giỏ hàng của bạn :
+    </div>
+
+    <div class="f-warp">
+      <div class="content3">
+          <div class="item-giohang">
+        <table  border="1px">
+            <tr>
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá tiền</th> 
+                <th>Số lương</th>
+                <th>Tổng tiền</th>
+                <th>Xóa</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+              </tr>
+        </table>
+    </div>
+
+        <form onsubmit="onSubmitForm(event)" id="custumerForm">
+          <p class="title-ttkh">Thông tin khách hàng</p>
+          <ul class="ttkh">
+            <li>
+              <div>
+                <input
+                  type="text"
+                  name="customername"
+                  id="name"
+                  placeholder="Họ và Tên"
+                />
+              </div>
+            </li>
+            <li>
+              <div>
+                <input
+                  type="text"
+                  name="customerphone"
+                  id="phone"
+                  placeholder="Số điện thoại"
+                />
+              </div>
+            </li>
+            <li>
+              <div>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Địa chỉ giao hàng"
+                />
+              </div>
+            </li>
+            <li>
+              <div>
+                <input
+                  type="text"
+                  name="request"
+                  id="request"
+                  placeholder="Yêu cầu khác"
+                />
+              </div>
+            </li>
+          </ul>
+          <p class="buy">
+            <button>
+              <strong>Đặt hàng </strong>
+            </button>
+          </p>
+        </form>
+      </div>
+      <section id="app"></section>
+    </div>
+
+    <script src="./formdata.js">
+    
+    </script>
+  </body>
+</show>

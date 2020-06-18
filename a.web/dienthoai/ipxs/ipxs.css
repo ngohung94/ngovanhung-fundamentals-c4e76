@@ -1,0 +1,133 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dcdcdc;
+}
+header{
+    width: 100%;
+    display: flex;
+    background-color: rgb(255,203,1);
+    align-items: center;
+}
+
+.imglogo{
+    width: 90px;
+    height: 80px;
+    margin-left: 100px; 
+}
+.logo{
+margin-right: 200px;
+color: red;
+}
+
+.search form{
+    display: block;
+    width: 500px;
+    position: relative;
+}
+.search form input{
+    width: 500px;
+    height: 34px;
+    border: none;
+    font-size: 14px;
+    padding: 0 60px 0 10px;
+    background: #fff;
+    
+}
+
+.icon-search{
+    width: 50px;
+    height: 34px;
+    display: inline-block;
+    position: absolute;
+    top :-10;
+    right: 0;
+    background: rgb(7, 2, 1);
+    color:white;
+
+}
+
+.gio{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.content{
+    display: flex;
+   justify-content: space-around;
+   margin-bottom: 20px;
+   background-color: rgba(10, 3, 1, 0.815);
+   height: 50px;
+   align-items: center;
+}
+.icon1{
+    color: rgb(255, 255, 255);
+}
+.f-warp{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+}
+.mb-head{
+    display: block;
+    list-style-type: none; 
+    text-decoration: none;
+    display: flex;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.mb-head li+li:before {
+    content: '/';
+    display: inline-block;
+    margin-left: 5px;
+    color: #898989;
+}
+.mb-title h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.content1{
+    display: flex;
+    list-style-type: none; 
+    justify-content: space-evenly;
+}
+.content1 span a{
+    display: block;
+    padding-top: 9px;
+    text-align: center;
+    background-color: red;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 40px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.price{
+    padding-left:30px;
+    padding-bottom: 30px;
+}
+.price strong{
+    font-size: 20px;
+    font-weight: bold;
+    color: #291bf0;
+    display: inline;
+}
+.price strike{
+    font-size: 16px;
+    color: #555353;
+    display: inline;
+}
