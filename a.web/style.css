@@ -2,23 +2,22 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    text-decoration: none;
 }
 .header{
     width: 100%;
     display: flex;
-    background-color: rgb(255,203,1);
+    background-color: #EC3237;
     align-items: center;
 }
 
 .imglogo{
-    width: 90px;
-    height: 80px;
+    width: 120px;
+    height: 90px;
     margin-left: 100px; 
 }
 .logo{
 margin-right: 200px;
-color: red;
+color: white;
 }
 .search form{
     display: block;
@@ -35,77 +34,96 @@ color: red;
     
 }
 
+
 .icon-search{
     width: 50px;
-    height: 34px;
+    height: 35px;
     display: inline-block;
     position: absolute;
     top :-10;
     right: 0;
-    background: rgb(7, 2, 1);
+    background: rgba(7, 2, 1, 0.829);
     color:white;
+    cursor: pointer;
 }
-
+.icon-search:hover{
+    background-color: black;
+}
 .gio{
     width: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
+    color: #fff;
 }
+
 .content{
     display: flex;
-   justify-content: space-around;
-   margin-bottom: 20px;
-   background-color: rgba(10, 3, 1, 0.815);
-   height: 50px;
-   align-items: center;
+    justify-content: space-around;
+    background-color: rgba(10, 3, 1, 0.815);
+    height: 50px;
+    align-items: center;
 }
 .icon1{
     color: rgb(255, 255, 255);
 }
 
+.carousel-item{
+    cursor: pointer;
+}
 .warp{
-
-text-align: center;
-background-color: aqua;
+    flex-wrap: wrap;
+    text-align: center;
+    background-image: url("https://png.pngtree.com/png-clipart/20190515/original/pngtree-blue-technology-background-png-image_3722409.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
-.mb-title h3 {
-    font-size: 20px;
-    color: #000000;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.warp h3 {
+    font-size: 28px;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+.back-to-top{
+    display: block;
+    position: fixed;
+    bottom: 40%;
+    right: 40px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    background: #fff;
+    color: #e70d0d;
+    cursor: pointer;
+    border: 2px #393d3f solid;
+    border-radius: 99px;
+}
 .mobile{
     /* margin-top: 20px; */
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
     width: 100%;
-    height: 300px;
+    height: 320px;
     display: flex;
     justify-content: space-around;
-   
 }
 .mb-form{
     width: 220px;
-    height: 250px;
+    height: 320px;
     background-color: #fff;
+    border: 1px solid black;
 }
 a:link{
     text-decoration: none;
 }
-a p:hover{
-    color: red;
+.mb-form a:hover{
     text-decoration: none;
 }
-.price strong:hover{
-    color: red;
-    text-decoration: none;
-}
-.price strike:hover{
+a p:hover,.price strong:hover,.price strike:hover{
     color: red;
     text-decoration: none;
 }
@@ -113,7 +131,7 @@ a p:hover{
 a p{
     margin-bottom: 0rem;
     font-size: 23px; 
-    color: black;
+    color: rgb(128, 76, 252);
 }
 .price strong{
     font-size: 20px;
@@ -125,4 +143,24 @@ a p{
     font-size: 16px;
     color: #555353;
     display: inline;
+}
+.buy{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.buy button strong{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 140px;
+    background-color: rgba(255, 60, 0, 0.836);
+    color: white;
+    cursor: pointer;
+}
+.buy button strong:hover{
+    background-color: rgb(255, 38, 0);
 }

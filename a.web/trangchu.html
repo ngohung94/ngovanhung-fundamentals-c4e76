@@ -18,10 +18,9 @@
         <a class="logo" href="" title="">
           <img
             class="imglogo"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoGmBrN-6s53yBRlJXG4vMDtmfpQMgXPXnSff5LjKVtuQXV8VJ&usqp=CAU"
-            alt=""
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_payDCu3StBXsJMPAn4qX-el2CatVFrKcITF8ZuRf_QQt5vlR&usqp=CAU"
           />
-          <b class="icon-logo">HTH shop</b>
+          <b class="icon-logo"></b>
         </a>
       </div>
       <div class="search">
@@ -29,7 +28,8 @@
           <div>
             <input
               type="text"
-              name="search"
+              id="myInput"
+              onkeyup="myFunction()"
               placeholder="Nhập tên sản phẩm cần tìm ..."
             />
             <button class="icon-search" type="submit">
@@ -45,8 +45,8 @@
         </div>
         <div>
           <a href="./giohang/giohang.html">
-            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-            Giỏ hàng
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+           Giỏ hàng
           </a>
         </div>
       </div>
@@ -62,6 +62,10 @@
           LAPTOP
         </a>
     </div>
+
+    <a href="#top" class="back-to-top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
     <ol class="carousel-indicators">
@@ -93,7 +97,7 @@
   <h3>  ĐIỆN THOẠI BÁN CHẠY </h3>
   <div class="mobile">
       <div class="mb-form">
-        <a href="./dienthoai/ip11/ip11.html">
+        <a id="1" href="./dienthoai/ip11/ip11.html">
           <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/9/11/637037687757921048_11-pro-max-chung.png" alt="Iphone 11 Pro max">
           <p>Iphone 11 Pro max </p>
           <div class="price">
@@ -101,6 +105,11 @@
               <strike>33.990.000₫</strike>
           </div>
         </a>
+        <p onclick=addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
       <div class="mb-form">
         <a href="./dienthoai/ipxs/ipxs.html">
@@ -111,9 +120,14 @@
               <strike>30.990.000₫</strike>
           </div>
         </a>
+        <p addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
       <div class="mb-form">
-        <a href="./dienthoai/ip8/ip8.html">
+        <a href="./dienthoai/ip11/ip11.html">
           <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/5/30/636948128206495550_iphone-8-plus.png" alt="Iphone 11 Pro max">
           <p>Iphone 8 Plus 64GB</p>
           <div class="price">
@@ -121,10 +135,14 @@
               <strike>14.990.000₫</strike>
           </div>
         </a>
-
+        <p addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
       <div class="mb-form">
-        <a href="./dienthoai/ip8/ip8.html">
+        <a href="./dienthoai/ip11/ip11.html">
           <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2018/1/27/636526515750427366_1o-6splus-32.png" alt="Iphone 11 Pro max">
           <p>Iphone 6 Plus 32GB</p>
           <div class="price">
@@ -132,6 +150,11 @@
               <strike>8.990.000₫</strike>
           </div>
         </a>
+        <p addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
       
   </div>
@@ -140,90 +163,66 @@
       <div class="mb-form">
         <a href="./dienthoai/ip11/ip11.html">
           <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/2/12/637170944168255808_ss-s20-plus-xanh-dd.png" alt="Iphone 11 Pro max">
-          <p>Samsung Galaxy S20+ </p>
+          <p>Samsung S20+ </p>
           <div class="price">
               <strong>22.990.000₫</strong>
               <strike>29.990.000₫</strike>
           </div>
         </a>
+        <p addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
       <div class="mb-form">
         <a href="./dienthoai/ip11/ip11.html">
           <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/2/21/636863616938548520_ss-galaxy-s10-plus-daidien.png" alt="Iphone 11 Pro max">
-          <p>Samsung Galaxy S10+</p>
+          <p>Samsung S10+</p>
           <div class="price">
               <strong>13.990.000₫</strong>
               <strike>18.990.000₫</strike>
           </div>
         </a>
+        <p addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
       <div class="mb-form">
         <a href="./dienthoai/ip11/ip11.html">
           <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/8/9/637009484555889036_SS-note-10-dd-1.png" alt="Iphone 11 Pro max">
-          <p>Samsung Galaxy Note 10</p>
+          <p>Samsung Note 10</p>
           <div class="price">
               <strong>21.490.000₫</strong>
               <strike>22.990.000₫</strike>
           </div>
         </a>
+        <p addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
 
       <div class="mb-form">
         <a href="./dienthoai/ip11/ip11.html">
           <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/465x465/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/6/2/637267175905809175_SaS-A21s-den-1.png" alt="Iphone 11 Pro max">
-          <p>Samsung Galaxy A21s</p>
+          <p>Samsung A21s</p>
           <div class="price">
               <strong>4.390.000₫</strong>
               <strike>4.690.000₫</strike>
           </div>
-      </a>
+        </a>
+        <p addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
-      
   </div>
   
-  <div class="mobile">
-    <div class="mb-form">
-      <a href="./dienthoai/ip11/ip11.html">
-        <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/3/6/637191049687962915_oppo-find-x2-dd-1.png" alt="Iphone 11 Pro max">
-        <p>OPPO Find X2 </p>
-        <div class="price">
-            <strong>19.000.000₫</strong>
-            <strike>23.990.000₫</strike>
-        </div>
-      </a>
-    </div>
-    <div class="mb-form">
-      <a href="./dienthoai/ip11/ip11.html">
-        <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/4/28/637236791683138737_reno-3-dd.png" alt="Iphone 11 Pro max">
-        <p>OPPO Zeno 3</p>
-        <div class="price">
-            <strong>8.490.000₫</strong>
-            <strike>8.990.000₫</strike>
-        </div>
-      </a>
-    </div>
-    <div class="mb-form">
-      <a href="./dienthoai/ip11/ip11.html">
-        <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/5/25/637259998714171083_oppo-a92-dd.png" alt="Iphone 11 Pro max">
-        <p>OPPO A92</p>
-        <div class="price">
-            <strong>6.490.000₫</strong>
-            <strike>6.990.000₫</strike>
-        </div>
-      </a>
-    </div>
-    <div class="mb-form">
-      <a href="./dienthoai/ip11/ip11.html">
-        <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/4/29/637237556264548465_oppo-a5-2020-dd.png" alt="Iphone 11 Pro max">
-        <p>OPPO A5</p>
-        <div class="price">
-            <strong>3.690.000₫</strong>
-            <strike>3.290.000₫</strike>
-        </div>
-      </a> 
-    </div> 
-  </div>
-
   <h3> LAPTOP GIÁ SỐC </h3>
   <div class="mobile">
     <div class="mb-form">
@@ -235,6 +234,11 @@
             <strike>33.990.000₫</strike>
         </div>
       </a>
+      <p addclick() class="buy">
+        <button>
+          <strong>Thêm vào giỏ </strong>
+        </button>
+      </p>
     </div>
     <div class="mb-form">
       <a href="./laptop/mb/mb.html">
@@ -245,16 +249,26 @@
             <strike>30.990.000₫</strike>
         </div>
       </a>
+      <p addclick() class="buy">
+        <button>
+          <strong>Thêm vào giỏ </strong>
+        </button>
+      </p>
     </div>
     <div class="mb-form">
       <a href="./laptop/mb/mb.html">
         <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/4/11/637221970108314570_macbook-air-13-2019-gold-dd.png" alt="Iphone 11 Pro max">
-        <p>Macbook Air 13</p>
+        <p>Macbook Air 11</p>
         <div class="price">
-            <strong>13.990.000₫</strong>
-            <strike>14.990.000₫</strike>
+          <strong>21.499.000₫</strong>
+          <strike>24.990.000₫</strike>
         </div>
-      </a> 
+      </a>
+      <p addclick() class="buy">
+        <button>
+          <strong>Thêm vào giỏ </strong>
+        </button>
+      </p>
     </div>
     <div class="mb-form">
       <a href="./laptop/mb/mb.html">
@@ -265,6 +279,11 @@
             <strike>18.990.000₫</strike>
         </div>
       </a>
+      <p addclick() class="buy">
+        <button>
+          <strong>Thêm vào giỏ </strong>
+        </button>
+      </p>
     </div>
   </div>
 
@@ -278,6 +297,11 @@
               <strike>33.990.000₫</strike>
           </div>
         </a>
+        <p addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
       <div class="mb-form">
         <a href="./laptop/mb/mb.html">
@@ -288,16 +312,26 @@
               <strike>30.990.000₫</strike>
           </div>
         </a>
+        <p addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
       <div class="mb-form">
         <a href="./laptop/mb/mb.html">
           <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/4/11/637221970108314570_macbook-air-13-2019-gold-dd.png" alt="Iphone 11 Pro max">
-          <p>Macbook Air 13</p>
+          <p>Macbook Air 11</p>
           <div class="price">
-              <strong>13.990.000₫</strong>
-              <strike>14.990.000₫</strike>
+            <strong>21.499.000₫</strong>
+            <strike>24.990.000₫</strike>
             </div>
         </a>
+        <p addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
       <div class="mb-form">
         <a href="./laptop/mb/mb.html">
@@ -307,69 +341,27 @@
               <strong>17.490.000₫</strong>
               <strike>18.990.000₫</strike>
           </div>
-      </a>
+        </a>
+        <p addclick() class="buy">
+          <button>
+            <strong>Thêm vào giỏ </strong>
+          </button>
+        </p>
       </div>
-   
   </div>
-  <div class="mobile">
-    <div class="mb-form">
-      <a href="./laptop/mb/mb.html">
-        <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2018/8/2/636688207026520043_mabookair-1o.png" alt="Iphone 11 Pro max">
-        <p>Macbook Air 13  </p>
-        <div class="price">
-            <strong>28.000.000₫</strong>
-            <strike>33.990.000₫</strike>
-        </div>
-      </a>
-    </div>
-    <div class="mb-form">
-      <a href="./laptop/mb/mb.html">
-        <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/4/11/637221970108265448_macbook-air-13-2020-silver-dd.png" alt="Iphone 11 Pro max">
-        <p> Macbook Air 13 2020 </p>
-        <div class="price">
-            <strong>25.590.000₫</strong>
-            <strike>30.990.000₫</strike>
-        </div>
-      </a>
-    </div>
-    <div class="mb-form">
-      <a href="./laptop/mb/mb.html">
-        <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/4/11/637221970108314570_macbook-air-13-2019-gold-dd.png" alt="Iphone 11 Pro max">
-        <p>Macbook Air 13 </p>
-        <div class="price">
-            <strong>13.990.000₫</strong>
-            <strike>14.990.000₫</strike>
-        </div>
-      </a>
-    </div>
-    <div class="mb-form">
-      <a href="./laptop/mb/mb.html">
-        <img width ="180" height="180" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/5/31/636948957624237933_macbook-pro--touch-bar-2019-dd.png" alt="Iphone 11 Pro max">
-        <p>Macbook Pro 13 </p>
-        <div class="price">
-            <strong>17.490.000₫</strong>
-            <strike>18.990.000₫</strike>
-        </div>
-      </a>
-    </div>
-    
-    
+    <section class="userList">
+
+    </section>
     
 
    
 </div>
+
 </div>
-<div class="footer">
-  dqwdqwdwq
- 
-</div>
+
   <script src="./app.js">
     localStorage.setItem('gioHang',JSON.stringify([]))
   </script>
-
-
-
-
 
 
 
