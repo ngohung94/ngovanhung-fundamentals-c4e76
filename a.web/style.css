@@ -49,6 +49,48 @@ color: white;
 .icon-search:hover{
     background-color: black;
 }
+.result-search{
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 11;
+}
+.result-search1{
+    margin-right: 50px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.result-search ul{
+    list-style-type: none;
+    width: 100%;
+}
+.result-search ul li a{
+    display: table;
+    display: flex;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e8e8e8;
+    
+}
+.result-search ul li a div{
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 50px;
+    font-size: 16px;
+}
+.result-search ul li a div h4{
+    font-size: 14px;
+    line-height: 1.29;
+    color: #505050;
+    margin-bottom: 6px;
+}
+.result-search ul li a div p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #d0021b;
+    display: inline-block;
+    margin-right: 15px;
+}
 .gio{
     width: 500px;
     display: flex;
@@ -77,21 +119,45 @@ color: white;
     background-image: url("https://png.pngtree.com/png-clipart/20190515/original/pngtree-blue-technology-background-png-image_3722409.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
-
-
 .warp h3 {
     font-size: 28px;
     color: #ffffff;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.mobile{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: all .3s; 
+}
+.mobile :hover{
+    transform: scale(1.005);
+    filter: blur(0rem) brightness(100%)
+}
+
+.mobile>*{
+    flex-basis: 15%;
+    margin: 20px;
+}
+.mb-form{
+    width: 18%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(199, 15, 9);
+    border-radius: 10px;
+
+}
 
 .back-to-top{
     display: block;
     position: fixed;
-    bottom: 40%;
-    right: 40px;
+    bottom: 5%;
+    right: 10px;
     z-index: 9999;
     width: 40px;
     height: 40px;
@@ -103,27 +169,14 @@ color: white;
     border: 2px #393d3f solid;
     border-radius: 99px;
 }
-.mobile{
-    /* margin-top: 20px; */
-    margin-bottom: 50px;
-    width: 100%;
-    height: 320px;
-    display: flex;
-    justify-content: space-around;
-}
-.mb-form{
-    width: 220px;
-    height: 320px;
-    background-color: #fff;
-    border: 1px solid black;
-}
+
 a:link{
     text-decoration: none;
 }
 .mb-form a:hover{
     text-decoration: none;
 }
-a p:hover,.price strong:hover,.price strike:hover{
+a p:hover,.price strong:hover,.price s:hover{
     color: red;
     text-decoration: none;
 }
@@ -139,8 +192,8 @@ a p{
     color: #383838;
     display: inline;
 }
-.price strike{
-    font-size: 16px;
+.price s{
+    font-size: 18px;
     color: #555353;
     display: inline;
 }

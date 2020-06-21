@@ -42,13 +42,13 @@ function onSubmitForm(event) {
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        if (filter != '' && txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
             document.getElementById("up").style.display = "block";
-            console.log("đâs")
+            console.log("1")
         } else {
             li[i].style.display = "none";
-            console.log("đâwqewqewqs")
+            console.log("2")
         }
     }
 }

@@ -70,7 +70,7 @@ color: red;
 .back-to-top{
     display: block;
     position: fixed;
-    bottom: 40%;
+    bottom: 5%;
     right: 40px;
     z-index: 9999;
     width: 40px;
@@ -144,6 +144,7 @@ color: red;
     background-color: #fff;
     border: 1px solid black;
     text-align: center;
+    border-radius: 6px;
 }
 a:link{
     text-decoration: none;

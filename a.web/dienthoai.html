@@ -9,7 +9,7 @@
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
   />    
- 
+
 </head>
 <body>
     <header class="header">
@@ -23,27 +23,92 @@
             
           </a>
         </div>
-        <div class="search">
-          <form method="GET">
-            <div>
-              <input
-                type="text"
-                name="search"
-                placeholder="Nhập tên sản phẩm cần tìm ..."
-              />
-              <button class="icon-search" type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </button>
+
+      <div class="search">
+        <form method="GET">
+          <div>
+            <input
+              type="text"
+              name="search"
+              id="myInput"
+              onkeyup="myFunction()"
+              autocomplete="off"
+              placeholder="Nhập tên sản phẩm cần tìm ..."
+            />
+            <button class="icon-search" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <div class="result-search"  style="display: none ;" id="up" >
+              <div class="result-search1">
+              <ul id="myUL">
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/9/11/637037687757921048_11-pro-max-chung.png" alt=""></p>
+                  <div>
+                    <h4>Iphone 11 Pro max </h4>
+                    <p>28.000.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/40x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Thumbs/2018/10/12/636749593270587915_iphoneXS-1o.png" alt=""></p>
+                  <div>
+                    <h4>Iphone XS Max </h4>
+                    <p>25.590.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/5/30/636948128206495550_iphone-8-plus.png" alt=""></p>
+                  <div>
+                    <h4>Iphone 8 Plus 64GB </h4>
+                    <p>13.990.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/40x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Thumbs/2018/1/27/636526515750427366_1o-6splus-32.png" alt=""></p>
+                  <div>
+                    <h4>Iphone 6 Plus 32GB </h4>
+                    <p>7.490.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./mb.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2018/8/2/636688207026520043_mabookair-1o.png" alt=""></p>
+                  <div>
+                    <h4>Macbook Air 13 </h4>
+                    <p>28.000.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./mb.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/4/11/637221970108265448_macbook-air-13-2020-silver-dd.png" alt=""></p>
+                  <div>
+                    <h4>Macbook Air 13 2020 </h4>
+                    <p>25.590.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./mb.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/4/11/637221970108314570_macbook-air-13-2019-gold-dd.png" alt=""></p>
+                  <div>
+                    <h4>Macbook Air 11</h4>
+                    <p>21.499.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./mb.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/5/31/636948957624237933_macbook-pro--touch-bar-2019-dd.png" alt=""></p>
+                  <div>
+                    <h4>Macbook Pro 13 </h4>
+                    <p>17.490.000₫</p>
+                  </div>
+                </a></li>
+              </ul>
             </div>
-          </form>
-          
+            </div>
+          </div>
+        </form>
       </div>
         <div class="gio">
           <div>
             <span> Hotline : 19001994</span>
           </div>
           <div>
-            <a href="../giohang/giohang.html">
+            <a href="./giohang.html">
               <i class="fa fa-shopping-basket" aria-hidden="true"></i>
               Giỏ hàng
             </a>
@@ -56,7 +121,7 @@
             <i class="fa fa-mobile" aria-hidden="true"></i>
             ĐIỆN THOẠI
           </a>
-          <a class="icon1" href="../laptop/laptop.html">
+          <a class="icon1" href="./laptop.html">
             <i class="fa fa-laptop" aria-hidden="true"></i>
             LAPTOP
           </a>
